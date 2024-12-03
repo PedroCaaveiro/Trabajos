@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/icons8-reddit-94.png">
+   <link href="css/movil.css" rel="stylesheet" text="text/css">
+   <link href="css/pantalla.css" rel="stylesheet" text="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SESIONES</title>
+</head>
+<body>
+    <div class="wrapVideos">
+
+        <div class="header">
+            <a href="index.html"><div class="logo"></div></a>
+            <div class="nav-container">
+                <button class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+                <div class="menu" id="menu">
+                    <a href="index.html">HOME</a>
+                    <a href="artistas.html">ARTISTAS</a>
+                    <a href="eventos.html">EVENTOS</a>
+                    <a href="videos.html">SESIONES</a>
+                    <a href="calendario.html">TICKETS</a>
+                    <a href="tienda.html">CALENDARIO</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+            <nav class="header_ordenador">
+              <a href="index.html">HOME</a>
+              <a href="artistas.html">ARTISTAS</a>
+              <a href="eventos.html">EVENTOS</a>
+              <a href="videos.html">SESIONES</a>
+              <a href="calendario.html">TIENDA</a>
+              <a href="tienda.html">CALENDARIO</a>
+              <a href="contacto.html">CONTACTO</a>
+            </nav>
+        </div>
+
+        <div class="contenedorVideos">
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/David-Guetta-Miami-Ultra-Music-Festival-2023-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/David-Guetta-United-at-Home-Dubai-Edition-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/Paris-Hilton-Tomorrowland-2019-Set-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/Paris-Hiltons-DJ-Set-to-kick-off-the-Summer-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/Steve-Aoki-at-Mainstage-Tomorrowland-Winter-2022-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/Steve-Aoki-Tomorrowland-Belgium-2019-W1-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/Trust-Wally-Teatro-Margno-Madrid-April-2023-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/Wally-Lopez-at-the-boiller-room-by-Toyroom-Madrid-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/Wally-Lopez-Palacio-RealMadridSpain-YouTube.mp4" controls></video>
+            </div>
+          </div>
+          <div class="paginaVideo">
+            <div class="video-contenedor">
+              <video src="videos/David Guetta x Jack Back Radio 1 in Ibiza 2019.mp4" controls></video>
+            </div>
+          </div></div>
+
+          <footer>
+            <div class="footer-contenido">
+                <div class="footer-enlaces">
+                    <a href="aviso.html">Aviso</a>
+                    <a href="politica.html">Política de Privacidad</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="social-rrss">
+                    <a href="https://www.facebook.com/."><img src="images/RRSS/icons8-facebook-rodeado-de-círculo-282(@3x).png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="images/RRSS/icons8-instagram-188(@2x).png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/"><img src="images/RRSS/icons8-linkedin-188(@2x).png" alt="LInkedin"></a>
+                    <a href="https://twitter.com/"><img src="images/RRSS/icons8-twitter-circled-94(@1x).png" alt="Twitter"></a>
+                    <a href="https://web.whatsapp.com/"><img src="images/RRSS/icons8-whatsapp-188(@2x).png" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <SCRipt>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var burger = document.querySelector(".hamburger-menu");
+            menu.classList.toggle("active");
+            burger.classList.toggle("opened");
+        }
+    </SCRipt>
+</body>
+</html>

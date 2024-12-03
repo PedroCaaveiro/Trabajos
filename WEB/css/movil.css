@@ -1,0 +1,828 @@
+body {
+    background-color: black;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/*********PAGINA INDEX**********/
+
+/***********CONTENEDOR PRINCIPAL*******/
+* .wrap {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 4245px;
+    background-color: #7d0d7d;
+}
+
+/**************COOKIES***********/
+#cookie-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 480px;
+    background-color: #ccc1c1;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#cookie-message p {
+    margin: 0;
+}
+
+
+
+#cookie-message .button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cookie-message .button:hover {
+    background-color: #0056b3;
+}
+
+/***********CABECERA********/
+.header {
+    position: fixed;
+    z-index: 1000;
+    width: 480px;
+    height: 70px;
+    background-color: #3a393a;
+    margin: 0px;
+    background-color: silver;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.header_ordenador {
+    display: none;
+    /* Ocultar el menú estándar en pantallas más pequeñas */
+}
+
+/*************LOGO***********/
+.logo {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+/************ MENU******/
+.nav-container {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: -200px;
+}
+
+
+
+.hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    margin-left: 0px;
+}
+
+.hamburger-menu .line {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #7d0d7d;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.hamburger-menu .line:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger-menu .line:nth-child(2),
+.hamburger-menu .line:nth-child(3) {
+    top: 10px;
+}
+
+.hamburger-menu .line:nth-child(3) {
+    bottom: 0px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0px;
+
+
+}
+
+.menu.active {
+    display: flex;
+}
+
+.hamburger-menu.opened .line:nth-child(1) {
+    transform: rotate(135deg);
+    top: 10px;
+}
+
+.hamburger-menu.opened .line:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.hamburger-menu.opened .line:nth-child(3) {
+    transform: rotate(-135deg);
+    top: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+    width: max-content;
+    /* Add this line */
+}
+
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.menu a:hover {
+    color: #7d0d7d;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+/*************VIDEO************/
+
+.cajaVideo {
+    width: 480px;
+    height: auto;
+    background-color: #3a393a;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+.cajaVideo video {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/***********CONTENEDOR CON CAJAS DE ARTISTAS*******/
+.contenedorArtista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1490px;
+    background-color: #7d0d7d;
+
+}
+
+/************ARTISTAS**********/
+.artistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 478px;
+    margin-bottom: 20px;
+    background-color: rgb(60, 59, 59);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.artistas img {
+    width: 60%;
+    height: auto;
+}
+
+.artistas p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.artistas h1 {
+    color: white;
+}
+
+.artistas a {
+    position: relative;
+    float: left;
+    left: 50px;
+}
+
+
+/*************COTENEDOR CAJAS EVENTOS******/
+.contenedorEventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1370px;
+    background-color: #7d0d7d;
+
+}
+
+/************EVENTOS************/
+.eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 478px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgb(60, 59, 59);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.eventos img {
+    width: 60%;
+    height: auto;
+}
+
+.eventos p {
+    text-align: center;
+    color: white;
+}
+
+.eventos h1 {
+    color: white;
+}
+
+.eventos a {
+    position: relative;
+    float: left;
+    left: 50px;
+}
+
+/****************SESIONES**********/
+.sesiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 478px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgb(60, 59, 59);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sesiones img {
+    width: 100%;
+    height: auto;
+}
+
+.sesiones p {
+    text-align: center;
+    color: white;
+}
+
+.sesiones h1 {
+    color: white;
+}
+
+/************* CALENDARIO**********/
+.calendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 478px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgb(60, 59, 59);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.calendario img {
+    width: 80%;
+    height: auto;
+}
+
+.calendario p {
+    text-align: center;
+    color: white;
+}
+
+.calendario h1 {
+    color: white;
+}
+
+/************FOOTER************/
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: silver;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-enlaces,
+.rrss {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-enlaces a,
+.rrss a {
+    color: black;
+    text-decoration: none;
+}
+
+.social-rrss img {
+    width: 30px;
+    height: auto;
+}
+
+.footer-enlaces a:hover {
+    color: #7d0d7d;
+}
+
+.social-rrss img:hover {
+    filter: brightness(50%);
+}
+
+/*************PAGINA ARTISTAS*******/
+.wrapArtista1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    height: 3250px;
+    background-color: #7d0d7d;
+
+
+}
+
+.contenedorArtista1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 3130px;
+    background-color: #7d0d7d;
+
+}
+
+.wrapArtista1 p {
+    color: BLACK;
+}
+
+.wrapArtista1 h1 {
+    color: black;
+}
+
+.artistas1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 478px;
+    margin-bottom: 20px;
+    background-color: rgb(60, 59, 59);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.artistas1 img {
+    width: 60%;
+    height: auto;
+}
+
+.artistas1 p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.artistas1 h1 {
+    color: white;
+}
+
+
+
+/**********PAGINA CONTACTO****************/
+
+contenedorContacto {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 480px;
+    height: auto;
+}
+
+contenedorContacto h1 {
+    color: rgb(241, 232, 232);
+    margin-top: 90px;
+    margin-left: 35px;
+}
+
+/******* FORMULARIO********/
+.cajaFormulario {
+    width: 400px;
+    height: 400px;
+    background-color: #7d0d7d;
+    margin-left: 30px;
+    border: 1px solid black;
+
+}
+
+form {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 377px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1px;
+
+}
+
+textarea {
+    width: 378px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1px;
+    resize: none;
+    font-size: 20px;
+    background-color: #7f7878;
+    color: white
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #7f7878;
+    color: white;
+}
+
+input[type="email"] {
+    font-size: 20px;
+    background-color: #7f7878;
+    color: white;
+
+}
+
+label[for="nombre"] {
+    font-size: 20px;
+
+
+}
+
+label[for="email"] {
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+label[for="mensaje"] {
+    font-size: 20px;
+
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #7f7878;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input[type="submit"]:hover {
+
+    background-color: black;
+}
+
+/*************PAGINA EVENTOS**********/
+.wrapEventos1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    height: auto;
+    background-color: #7d0d7d;
+
+}
+
+.contenedorEventos1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #7d0d7d;
+
+}
+
+.wrapEventos1 p {
+    font-size: 20px;
+
+}
+
+.eventos1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 478px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: rgb(60, 59, 59);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.eventos1 img {
+    width: 60%;
+    height: auto;
+}
+
+.eventos1 p {
+    text-align: center;
+    color: white;
+}
+
+.eventos1 h1 {
+    color: white;
+}
+
+.eventos1 a {
+    position: relative;
+    float: left;
+    left: 50px;
+}
+
+
+
+/**************PAGINA SESIONES********/
+.wrapVideos {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    background-color: #7d0d7d;
+    align-items: center;
+
+
+}
+
+/***********CONTENEDOR CON CAJA VIDEOS*******/
+.contenedorVideos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    height: 2500px;
+    background-color: #7d0d7d;
+}
+
+.paginaVideo {
+    width: 400px;
+    height: 225px;
+    background-color: #7f7c7c;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    box-shadow:
+        0 0 0 10px rgba(0, 0, 0, 0.2) inset,
+        0 0 10px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.video-contenedor {
+    width: 100%;
+    height: 100%;
+
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+/*********PAGINA TICKETS*********/
+
+.wrapCalendario {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    background-color: #7d0d7d;
+    align-items: center;
+
+
+}
+
+/********** CONTENEDOR CON CAJAS TIKETS*******/
+.contenedorCalendario {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 7150px;
+    background-color: #7d0d7d;
+    align-items: center;
+
+}
+
+.paginaCalendario {
+    width: 400px;
+    height: 350px;
+    background-color: #7f7c7c;
+    margin-top: 90px;
+    border: 1px solid #ccc;
+    box-shadow:
+        0 0 0 10px rgba(0, 0, 0, 0.2) inset,
+        0 0 10px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.paginaCalendario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/***********CALENDARIO***********/
+
+.wrapTienda {
+
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    background-color: #7d0d7d;
+    align-items: center;
+
+
+}
+
+/*************** CONTENEDOR CON CAJA CALENDARIOS**********/
+.contenedorTienda {
+
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    background-color: #7d0d7d;
+    align-items: center;
+
+
+}
+
+.paginaTienda {
+    width: 400px;
+    height: 440px;
+    background-color: #7f7c7c;
+    margin-top: 80px;
+    border: 1px solid #ccc;
+    box-shadow:
+        0 0 0 10px rgba(0, 0, 0, 0.2) inset,
+        0 0 10px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(0, 0, 0, 0.2),
+        0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.paginaTienda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*************** PAGINA AVISO*-***********/
+
+.wrapAviso {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    background-color: #7f7c7c;
+    align-items: center;
+
+
+}
+
+.contenedorAviso {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+
+
+
+}
+
+.textoAviso {
+    width: 480px;
+    height: auto;
+    text-align: center;
+
+
+}
+
+.textoAviso p {
+    color: black;
+}
+
+.textoAviso h4 {
+    color: #7d0d7d;
+}
+
+/************PAGINA POLITICA PRIVACIDAD*******/
+
+.wrapPolitica {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+    background-color: #7f7c7c;
+    align-items: center;
+}
+
+.contenedorPolitica {
+
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: auto;
+
+}
+
+.textoPolitica {
+
+    width: 480px;
+    height: auto;
+    text-align: center;
+
+}
+
+.textoPolitica h2 {
+    color: #7d0d7d;
+}

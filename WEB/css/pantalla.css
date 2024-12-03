@@ -1,0 +1,691 @@
+@media screen and (min-width: 1080px) {
+
+
+    /*********PAGINA INDEX**********/
+
+    /***********CONTENEDOR PRINCIPAL*******/
+    * .wrap {
+        width: 1080px;
+        height: 2255px;
+        background-color: black;
+    }
+
+
+
+    /***********CABECERA********/
+    .header {
+        width: 1079px;
+        height: 100px;
+    }
+
+    .header_ordenador {
+        display: block;
+        /* Mostrar el menú estándar en pantallas de escritorio */
+        margin-top: 20px;
+        margin-left: 150px;
+        font-size: 20px;
+        color: white;
+
+    }
+
+    a {
+        position: relative;
+        color: rgb(66, 66, 66);
+        margin-left: 20px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .header_ordenador a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.3s;
+    }
+
+    .header_ordenador a:hover {
+        color: #7d0d7d;
+    }
+
+    .header_ordenador a:hover::before {
+        width: 100%;
+    }
+
+    /*************LOGO***********/
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+
+    /************ MENU******/
+    .nav-container {
+        display: none;
+    }
+
+    /*************VIDEO************/
+    .cajaVideo {
+        width: 1079px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cajaVideo video {
+        margin-top: 70px;
+
+    }
+
+    /***********CONTENEDOR CON CAJAS DE ARTISTAS*******/
+    .contenedorArtista {
+        flex-direction: row;
+        width: 1080px;
+        height: 400px;
+        background-color: black;
+
+
+    }
+
+    /************ARTISTAS**********/
+    .artistas {
+        flex-direction: row;
+        width: 260px;
+        margin-left: 6px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) inset, 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .artistas:hover {
+        box-shadow: 0 0 20px rgba(218, 165, 32, 0.7);
+    }
+
+    .artistas img {
+        width: 80%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .artistas:hover img {
+        transform: scale(1.2);
+    }
+
+    .artistas h1 {
+        display: none;
+
+    }
+
+    .artistas a {
+        left: 20px;
+    }
+
+
+
+
+    /*************CONTENEDOR CAJAS EVENTOS******/
+    .contenedorEventos {
+        flex-direction: row;
+        width: 1080px;
+        height: 400px;
+        background-color: black;
+        align-items: stretch;
+
+    }
+
+    /************EVENTOS************/
+    .eventos {
+        flex-direction: column;
+        width: 260px;
+        margin-left: 6px;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .eventos:hover {
+        box-shadow: 0 0 20px rgba(218, 165, 32, 0.7);
+    }
+
+    .eventos img {
+        width: 80%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .eventos:hover img {
+        transform: scale(1.2);
+    }
+
+    .eventos p {
+        color: rgb(241, 235, 235);
+        font-size: 18px;
+    }
+
+    .eventos h1 {
+        display: none;
+    }
+
+    .eventos a {
+        position: relative;
+        float: left;
+        left: 20px;
+    }
+
+    /****************SESIONES**********/
+    .sesiones {
+        width: 1078px;
+    }
+
+    .sesiones img {
+        border: 3px solid silver;
+    }
+
+
+    .sesiones img:hover {
+        animation: pulse 1s infinite;
+        border-color: gold;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .sesiones p {
+        color: rgb(238, 234, 234);
+        font-size: 18px;
+    }
+
+    .sesiones h1 {
+        color: rgb(242, 236, 236);
+        margin-left: 50px;
+    }
+
+    /************** FOTO CALENDARIO********/
+
+    .calendario {
+        width: 100%;
+
+    }
+
+    .calendario img {
+        width: 30%;
+        border: 3px solid silver;
+    }
+
+    .calendario img:hover {
+        animation: pulseCalendario 1s infinite;
+        border-color: gold;
+    }
+
+    @keyframes pulseCalendario {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scaleX(1.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+
+    /**************** PAGINA ARTISTA*********/
+
+    .wrapArtista1 {
+        width: 1080px;
+        height: 1240px;
+        background-color: black;
+    }
+
+    .contenedorArtista1 {
+        flex-direction: row;
+        align-items: stretch;
+        width: 1080px;
+        height: 1000px;
+        margin-top: 120px;
+        background-color: black;
+        gap: 5px;
+    }
+
+
+
+    .artistas1 {
+        width: 350px;
+        height: auto;
+        margin-bottom: 10px;
+
+
+    }
+
+
+
+    .artistas1 img:hover~p {
+        color: gold;
+    }
+
+
+
+    .artistas1 h1 {
+        display: none;
+    }
+
+    /*************PAGINA EVENTOS**********/
+    .wrapEventos1 {
+        width: 1080px;
+        height: 740px;
+        background-color: black;
+
+
+    }
+
+    .contenedorEventos1 {
+        flex-direction: row;
+        align-items: stretch;
+        width: 1080px;
+        margin-top: 120px;
+        height: 500px;
+        background-color: black;
+        gap: 5px;
+    }
+
+
+
+    .eventos1 {
+        transition: background-color 0.3s ease, color 0.3s ease;
+        width: 350px;
+
+
+
+
+    }
+
+    .eventos1 img {
+        width: 70%;
+
+    }
+
+    .eventos1 p {
+        transition: color 0.3s ease;
+    }
+
+    .eventos1 h1 {
+        display: none;
+    }
+
+
+
+    .eventos1:hover {
+        background-color: rgb(226, 16, 153);
+        color: white;
+    }
+
+    .eventos1.eventoEspuma:hover {
+        background-color: #1E90FF;
+        /* Azul intenso */
+        color: #FFFFFF;
+        /* Blanco */
+    }
+
+    .eventos1.eventoAnimacion:hover {
+        background-color: #32CD32;
+        /* Verde lima */
+        color: #000000;
+        /* Negro */
+    }
+
+    .eventos1.eventoPoleDance:hover {
+        background-color: #FF69B4;
+        /* Rosa caliente */
+        color: #FFFFFF;
+        /* Blanco */
+    }
+
+    .eventos1.eventoBodas:hover {
+        background-color: #8B4513;
+        /* Marrón */
+        color: #620b16;
+        /* Blanco */
+    }
+
+    .eventos1.eventoEspuma:hover p {
+        color: #a8b01b;
+        /* Blanco */
+    }
+
+    .eventos1.eventoAnimacion:hover p {
+        color: #000000;
+        /* Negro */
+    }
+
+    .eventos1.eventoPoleDance:hover p {
+        color: #1a3327;
+        /* Blanco */
+    }
+
+    .eventos1.eventoBodas:hover p {
+        color: #000080;
+        /* Blanco */
+    }
+
+    /***************PAGINA SESIONES*******/
+    .wrapVideos {
+        width: 1080px;
+    }
+
+    /***********CONTENEDOR CON CAJA VIDEOS*******/
+    .contenedorVideos {
+
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 1080px;
+        height: 1700px;
+        margin-top: 110px;
+        background-color: black;
+
+    }
+
+    .paginaVideo {
+        width: 510px;
+        height: auto;
+        margin-left: 20px;
+        border: 3px solid #ccc;
+        box-shadow:
+            0px 10px 5px -5px #888,
+            5px 0px 5px -5px #888,
+            -5px 0px 5px -5px #888,
+            0px -5px 5px -5px #888;
+        transition: border-color 0.3s ease;
+
+    }
+
+    .paginaVideo:hover {
+        border-color: rgb(233, 40, 10);
+        /* Cambia el color del borde a dorado al pasar el ratón */
+    }
+
+
+
+
+
+    /************* PAGINA TIKETS********/
+    .wrapCalendario {
+        width: 1080px;
+        background-color: black;
+    }
+
+    /********** CONTENEDOR CON CAJAS TIKETS*******/
+    .contenedorCalendario {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 1080px;
+        height: 4100px;
+        background-color: black;
+    }
+
+    .paginaCalendario {
+        width: 450px;
+        height: 350px;
+        background-color: #88126d;
+        margin-left: 55px;
+        border: 3px solid #ccc;
+        box-shadow:
+            0px 10px 5px -5px #888,
+            5px 0px 5px -5px #888,
+            -5px 0px 5px -5px #888,
+            0px -5px 5px -5px #888;
+        transition: transform 0.3s ease;
+    }
+
+    .paginaCalendario:hover {
+        transform: scale(1.1);
+        /* Crece un poco */
+        animation: changeColor 2s infinite;
+        /* Cambia de color parpadeando */
+    }
+
+    @keyframes changeColor {
+        0% {
+            background-color: #ff0000;
+        }
+
+        14% {
+            background-color: #ff7f00;
+        }
+
+        28% {
+            background-color: #ffff00;
+        }
+
+        42% {
+            background-color: #00ff00;
+        }
+
+        57% {
+            background-color: #0000ff;
+        }
+
+        71% {
+            background-color: #4b0082;
+        }
+
+        85% {
+            background-color: #9400d3;
+        }
+
+        100% {
+            background-color: #ff0000;
+        }
+    }
+
+
+
+    .paginaCalendario img {
+        object-fit: contain;
+    }
+
+
+    /*******FOOTER NO SALE TODO IGUAL UTILIZADO  CSS MOVIL*****/
+
+    /************ PAGINA CALENDARIO**********/
+    .wrapTienda {
+        width: 1080px;
+        background-color: black;
+    }
+
+    /*************** CONTENEDOR CON CAJA CALENDARIOS**********/
+    .contenedorTienda {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 1080px;
+        height: 2900px;
+        background-color: black;
+    }
+
+    .paginaTienda {
+        width: 450px;
+        height: 350px;
+        background-color: #88126d;
+        margin-top: 100px;
+        margin-left: 55px;
+        border: 3px solid #ccc;
+        box-shadow:
+            -30px 0 30px -30px #888,
+            /* Sombra izquierda */
+            0 30px 30px -30px #888,
+            /* Sombra inferior */
+            0 -30px 30px -30px #888;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .paginaTienda:hover {
+        box-shadow:
+            -30px 0 30px -30px #FF4500,
+            /* Sombra izquierda */
+            0 30px 30px -30px #FF4500,
+            /* Sombra inferior */
+            0 -30px 30px -30px #FF4500;
+        /* Sombra superior */
+        border-color: #FFD700;
+    }
+
+
+
+    /**************PAGINA CONTACTO******/
+
+    contenedorContacto {
+        width: 1080px;
+        height: 800px;
+    }
+
+    contenedorContacto h1 {
+        color: black;
+        margin-top: 150px;
+        margin-left: 400px;
+        animation: colorchange 10s infinite;
+    }
+
+    @keyframes colorchange {
+        0% {
+            color: rgb(130, 6, 6);
+        }
+
+        10% {
+            color: rgb(100, 200, 144);
+        }
+
+        20% {
+            color: rgb(215, 232, 140);
+        }
+
+        30% {
+            color: rgb(148, 50, 144);
+        }
+
+        40% {
+            color: rgb(100, 200, 100);
+        }
+
+        50% {
+            color: rgb(200, 144, 144);
+        }
+
+        60% {
+            color: rgb(58, 169, 73);
+        }
+
+        70% {
+            color: rgb(36, 13, 187);
+        }
+
+        80% {
+            color: rgb(135, 204, 7);
+        }
+
+        90% {
+            color: rgb(200, 200, 200);
+        }
+
+        100% {
+            color: rgb(148, 144, 144);
+        }
+    }
+
+    /******* FORMULARIO********/
+    .cajaFormulario {
+        width: 900px;
+        height: 900px;
+        margin-left: 100px;
+
+    }
+
+
+    input[type="text"],
+    input[type="email"] {
+        width: 577px;
+        padding: 15px;
+        border-radius: 2px;
+    }
+
+    textarea {
+        width: 577px;
+        height: 240px;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 2px;
+
+    }
+
+    input[type="submit"] {
+        margin-left: 0px;
+        margin-top: 2px;
+    }
+
+    /*************** PAGINA AVISO*-***********/
+
+    .wrapAviso {
+        width: 1080px;
+        background-color: black;
+    }
+
+    .contenedorAviso {
+        width: 1080px;
+    }
+
+    .textoAviso {
+        width: 1080px;
+        height: auto;
+        margin-top: 100px;
+        text-align: justify;
+        background-color: black;
+    }
+
+    .textoAviso p {
+        color: white;
+    }
+
+    .textoAviso h4 {
+        color: #7d0d7d;
+    }
+
+    /************PAGINA POLITICA PRIVACIDAD*******/
+
+    .wrapPolitica {
+        width: 1080px;
+        background-color: black;
+    }
+
+    .contenedorPolitica {
+        width: 1080px;
+    }
+
+    .textoPolitica {
+        margin-top: 100px;
+        width: 1080px;
+        text-align: justify;
+    }
+
+    .textoPolitica p {
+        color: white;
+    }
+
+
+    /****************FIN ***********/
+}

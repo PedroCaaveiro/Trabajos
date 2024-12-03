@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/icons8-reddit-94.png">
+    <link href="css/movil.css" rel="stylesheet" text="text/css">
+    <link href="css/pantalla.css" rel="stylesheet" text="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALENDARIO</title>
+</head>
+<body>
+    <div class="wrapCalendario">
+        <div class="header">
+            <a href="index.html"><div class="logo"></div></a>
+            <div class="nav-container">
+                <button class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+                <div class="menu" id="menu">
+                    <a href="index.html">HOME</a>
+                    <a href="artistas.html">ARTISTAS</a>
+                    <a href="eventos.html">EVENTOS</a>
+                    <a href="videos.html">SESIONES</a>
+                    <a href="calendario.html">TICKETS</a>
+                    <a href="tienda.html">CALENDARIO</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+            <nav class="header_ordenador">
+                <a href="index.html">HOME</a>
+                <a href="artistas.html">ARTISTAS</a>
+                <a href="eventos.html">EVENTOS</a>
+                <a href="videos.html">SESIONES</a>
+                <a href="calendario.html">TIENDA</a>
+                <a href="tienda.html">CALENDARIO</a>
+                <a href="contacto.html">CONTACTO</a>
+              </nav>
+        </div>
+        <div class="contenedorCalendario">
+        <div class="paginaCalendario"><img src="images/CALENDARIO/BCM-OPening-0306-POST-3-1.jpg" alt=""></div>
+         <div class="paginaCalendario"><img src="images/CALENDARIO/BCM-Mark-Knight-100623-POST-1.jpg" alt=""></div>
+         <div class="paginaCalendario"><img src="images/CALENDARIO/BCM-Juan-Magan-240723-POST-2-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/BCM-James-Hype-240823-POST-1.jpg" alt="ENERO"></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/BCM-Mark-Knight-100623-POST-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/BCM-Vintage-Culture-130723-POST-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/Danny-Howard-Thursday-Sept-7-POST-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/Friday-1080x1080-2.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/IL-PAGANTE-AGOSTO-30.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/La-isla-Wednesday-August-16-POST_-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/Monday-1080x1080-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/Saturday-1080x1080-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/sq_eliteUrbanclub_02062023_LIRICO-1-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/sq_eliteUrbanclub_04082023_juanMagan-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/sq_eliteUrbanclub_07072023_dalex-1.jpg" alt=""></div>
+        <div class="paginaCalendario"><img src="images/CALENDARIO/sq_reggaeton_viejo_dannyRomero_09062023_BCM-1.jpg" alt=""></div>
+    </div>
+
+
+
+        <footer>
+            <div class="footer-contenido">
+                <div class="footer-enlaces">
+                    <a href="aviso.html">Aviso</a>
+                    <a href="politica.html">Política de Privacidad</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="social-rrss">
+                    <a href="https://www.facebook.com/."><img src="images/RRSS/icons8-facebook-rodeado-de-círculo-282(@3x).png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="images/RRSS/icons8-instagram-188(@2x).png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/"><img src="images/RRSS/icons8-linkedin-188(@2x).png" alt="LInkedin"></a>
+                    <a href="https://twitter.com/"><img src="images/RRSS/icons8-twitter-circled-94(@1x).png" alt="Twitter"></a>
+                    <a href="https://web.whatsapp.com/"><img src="images/RRSS/icons8-whatsapp-188(@2x).png" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <SCRipt>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var burger = document.querySelector(".hamburger-menu");
+            menu.classList.toggle("active");
+            burger.classList.toggle("opened");
+        }
+    </SCRipt>
+    <script>$(document).ready(function() {
+        var colors = ["#ff0000", "#ff7f00", "#ffff00", "#00ff00", "#0000ff", "#4b0082", "#9400d3"];
+        var i = 0;
+        var colorChangeInterval;
+    
+        $(".paginaCalendario").hover(function() {
+            var thisElement = $(this); // Referencia al elemento que se está seleccionando
+            thisElement.css("transform", "scale(1.1)");
+            colorChangeInterval = setInterval(function() {
+                i = i < colors.length ? i : 0;
+                thisElement.css("background-color", colors[i]);
+                i++;
+            }, 250); // Cambia de color cada 250 milisegundos
+        }, function() {
+            $(this).css("transform", "scale(1)");
+            $(this).css("background-color", "#7f7c7c"); // Restaura el color original al dejar de pasar el ratón por encima
+            clearInterval(colorChangeInterval); // Detiene el cambio de color
+        });
+    });
+    
+    
+    </script>
+</body>
+</html>

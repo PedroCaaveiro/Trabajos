@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="images/icons8-reddit-94.png">
+    <link href="css/movil.css" rel="stylesheet" text="text/css">
+    <link href="css/pantalla.css" rel="stylesheet" text="text/css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>
+</head>
+<body>
+    <div class="wrapEventos1">
+
+        <div class="header">
+            <a href="index.html"><div class="logo"></div></a>
+            <div class="nav-container">
+                <button class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+                </button>
+                <div class="menu" id="menu">
+                    <a href="index.html">HOME</a>
+                    <a href="artistas.html">ARTISTAS</a>
+                    <a href="eventos.html">EVENTOS</a>
+                    <a href="videos.html">SESIONES</a>
+                    <a href="calendario.html">TICKETS</a>
+                    <a href="tienda.html">CALENDARIO</a>
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </div>
+            <nav class="header_ordenador">
+                <a href="index.html">HOME</a>
+                <a href="artistas.html">ARTISTAS</a>
+                <a href="eventos.html">EVENTOS</a>
+                <a href="videos.html">SESIONES</a>
+                <a href="calendario.html">TIENDA</a>
+                <a href="tienda.html">CALENDARIO</a>
+                <a href="contacto.html">CONTACTO</a>
+              </nav>
+        </div>
+        <div class="contenedorEventos1">
+            <div class="eventos1 eventoEspuma">
+                <h1>EVENTOS</h1>
+                <img src="images/EVENTOS/1.jpg" alt="Espuma">
+                <p>FIESTAS DE ESPUMA<br><br>Quieres realizar una fiesta por todo lo alto???</p>
+            </div>
+            <div class="eventos1 eventoAnimacion">
+                <img src="images/EVENTOS/3.jpg" alt="Animación">
+                <p>ANIMACIÓN<br><br> Disponemos de los mejores animadores para tus eventos!!!</p>
+            </div>
+            <div class="eventos1 eventoPoleDance">
+                <img src="images/EVENTOS/4.jpg" alt="Pole Dance">
+                <p>POLE DANCE<br><br> Una despedida de solteros...??</p>
+            </div>
+            <div class="eventos1 eventoBodas">
+                <img src="images/EVENTOS/5.jpg" alt="Bodas">
+                <p>BODAS<br><br> Quieres que el dia mas importante de tu vida sea inolvidable!!!</p>
+            </div>
+            
+</div>
+
+        <footer>
+            <div class="footer-contenido">
+                <div class="footer-enlaces">
+                    <a href="aviso.html">Aviso</a>
+                    <a href="politica.html">Política de Privacidad</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="social-rrss">
+                    <a href="https://www.facebook.com/."><img src="images/RRSS/icons8-facebook-rodeado-de-círculo-282(@3x).png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="images/RRSS/icons8-instagram-188(@2x).png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/"><img src="images/RRSS/icons8-linkedin-188(@2x).png" alt="LInkedin"></a>
+                    <a href="https://twitter.com/"><img src="images/RRSS/icons8-twitter-circled-94(@1x).png" alt="Twitter"></a>
+                    <a href="https://web.whatsapp.com/"><img src="images/RRSS/icons8-whatsapp-188(@2x).png" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+    </div>
+    <SCRipt>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var burger = document.querySelector(".hamburger-menu");
+            menu.classList.toggle("active");
+            burger.classList.toggle("opened");
+        }
+    </SCRipt>
+</body>
+</html>
