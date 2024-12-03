@@ -552,7 +552,7 @@
 
     contenedorContacto {
         width: 1080px;
-        height: 800px;
+        height: 927px;
     }
 
     contenedorContacto h1 {
@@ -611,7 +611,7 @@
     /******* FORMULARIO********/
     .cajaFormulario {
         width: 900px;
-        height: 900px;
+        height: 650px;
         margin-left: 100px;
 
     }
