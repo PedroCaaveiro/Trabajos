@@ -37,3 +37,33 @@ nav a{
     text-decoration: none;
     color: var(--blanco);
 }
+nav a:hover{
+    color: blue;
+}
+.background {
+    text-align: center;
+    height: 500px; /* Ajusta la altura a tus necesidades */
+    background-image: url(../imagenes/imagen.jpg); /* Cambia esto por la ruta correcta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    color: rgb(219, 7, 7); /* Ajusta el color del texto para que sea legible sobre la imagen */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Opcional: añade sombra para mejorar el contraste */
+    padding: 20px;
+    border-radius: 10px; /* Opcional: bordes redondeados */ 
+}
+.background h2{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.background p{
+    font-size: 16px;
+}
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    background-color: blueviolet;
+}
+
