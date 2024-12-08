@@ -7,25 +7,130 @@
 
 /* Variables */
 :root {
-    --color-primary: #3498db;
+    --color-primary:linear-gradient(90deg, #000428, #004E92);
     --color-secondary: #2ecc71;
     --color-text: #333;
-    --color-bg: #1010d6;
+    --color-blanco: #f4f4f5;
     --font-family: 'Arial', sans-serif;
+    
 }
 
-/* Global Styles */
+
 body {
     font-family: var(--font-family);
     font-size: 16px;
     color: var(--color-text);
-    background-color: rgb(150, 29, 29);
+    background:var(--color-primary);
     line-height: 1.6;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
 }
-header{
- width: 100%;
-    height: 200px;
+.header{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
     
+}
+.header h1{
+    font-size: 1.5rem; 
+    color:var(--color-blanco); /* Color principal del texto */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.4), /* Sombra inferior */
+        -2px -2px 5px rgba(255, 255, 255, 0.6); /* Brillo superior */
     
+    text-align: center;
+    border-radius: 5px; /* Suaviza bordes */
+    
+}
+.header nav {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.header a {
+    color:var(--color-blanco);
+    text-decoration: none;
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+}
+
+.header a::after {
+    content: ""; /* Crea el pseudo-elemento */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Grosor de la línea */
+    background-color: var(--color-secondary); /* Color de la línea */
+    transition: width 0.3s ease-out; /* Animación suave */
+}
+
+.header a:hover::after {
+    width: 100%; /* La línea crece al 100% del ancho del enlace */
+    background-color: var(--color-secondary);
+}
+.header a:hover{
+    color:var(--color-secondary);
+}
+main{
+    background-image:url(../imagenes/Background.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+.main__1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30;
+    height:300px;
+    
+   height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main__1 h2{
+    font-size:40px;
+    color: var(--color-blanco);
+   text-shadow: 2px 2px 5px rgba(8, 8, 8, 0.4);
+}
+.main__1 h3{
+    font-size:20px;
+    color: var(--color-blanco);
+   text-shadow: 2px 2px 5px rgba(8, 8, 8, 0.4);
+}
+.main__2{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+.footer{
+    text-align: center;
+    height:80px;
+    background-color: #333;
+  
+}
+.footer p{
+    color: var(--color-blanco);
+}
+
+a img {
+    width: 40px; /* Ajusta según tu diseño */
+    height: 40px; /* Ajusta según tu diseño */
+    margin-left: 3.125rem;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animación suave */
+}
+a img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+    opacity: 0.8; /* Reduce ligeramente la opacidad */
 }
 
