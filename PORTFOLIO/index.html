@@ -12,8 +12,8 @@
     <header class="header">
         <h1>Pedro Caaveiro Desarrollador Web Freelance</h1>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Mi</a>
+            <a href="index.html">Inicio</a>
+            <a href="personal.html">Sobre Mi</a>
             <a href="#">Proyectos</a>
             <a href="#">Contacto</a>
         </nav>
@@ -30,19 +30,45 @@
         <section class="main__2">
             <h2>Mis servicios</h2>
             <section class="main__3">
-            <section class="main__3__bloque">
+            <section class="main__3__bloque" onclick="openModal('Diseño y desarrollo web ')">
                 <img src="../PORTFOLIO/imagenes/Paint Palette.png" alt="Diseño">
+                
             </section>
-            <section class="main__3__bloque">
+            <section class="main__3__bloque" onclick="openModal('Desarrollo de aplicaciones Web')">
                 <img src="../PORTFOLIO/imagenes/Apple Logo.png" alt="">
             </section>
-            <section class="main__3__bloque"><img src="../PORTFOLIO/imagenes/E-commerce.png" alt=""></section>
+            <section class="main__3__bloque" onclick="openModal('Desarrollo E-commerce')">
+                <img src="../PORTFOLIO/imagenes/E-commerce.png" alt=""></section>
             
             </section>
 
 
         </section>
-       
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p id="modal-text"></p> <!-- Texto que cambia dependiendo de la imagen -->
+                <button onclick="openContactForm()">Contactar</button>
+            </div>
+        </div>
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeContactForm()">&times;</span>
+                <h3>Formulario de Contacto</h3>
+                <form id="contactForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+        
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                    <label for="message">Mensaje:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
        
     <footer class="footer">
         <p>2024 Pedro Caaveiro - Desarrollador Web Freelance. Todos los derechos reservados.</p>

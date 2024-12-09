@@ -35,3 +35,36 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 // Aplica el observer a ambos encabezados
 headings.forEach(heading => observer.observe(heading));
+// Abre el primer modal y actualiza el contenido con la información de la imagen
+function openModal(info) {
+    document.getElementById("modal").style.display = "flex"; // Muestra el primer modal
+    document.getElementById("modal-text").textContent = info; // Actualiza el texto del modal
+}
+
+// Cierra el primer modal
+function closeModal() {
+    document.getElementById("modal").style.display = "none"; // Oculta el primer modal
+}
+
+// Abre el segundo modal (formulario de contacto)
+function openContactForm() {
+    document.getElementById("modal").style.display = "none"; // Cierra el primer modal
+    document.getElementById("contactModal").style.display = "flex"; // Muestra el modal del formulario
+}
+
+// Cierra el segundo modal (formulario de contacto)
+function closeContactForm() {
+    document.getElementById("contactModal").style.display = "none"; // Oculta el modal del formulario
+}
+
+// Evitar que el formulario se envíe de manera tradicional (simular el envío para el ejemplo)
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita el envío tradicional del formulario
+
+    // Aquí puedes agregar lógica para enviar el formulario, como una petición AJAX o una validación.
+
+    // Cerrar el modal del formulario después de "enviar"
+    alert("Formulario enviado con éxito");
+    closeContactForm();
+});
+
