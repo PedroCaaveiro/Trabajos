@@ -32,7 +32,7 @@ a{
     text-decoration: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 .contenedor{
     max-width: 120rem;
@@ -85,4 +85,112 @@ text-align: center;
 .navegacion__enlace--activo,
 .navegacion__enlace:hover{
     color: var(--negro);
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    column-gap: 2rem;
+    
+    
+}
+@media(min-width:768px){
+.grid{
+    grid-template-columns:repeat(3,1fr);
+}
+}
+.producto{
+background-color: var(--primario_oscuro);
+padding: 2rem;
+text-align: center;
+margin: 10px;
+}
+
+
+.producto__nombre{
+font-size: 4rem;
+}
+.producto_precio{
+    font: size 20px;
+color: var(--secundario_oscuro);
+}
+.producto__nombre,
+.producto__precio{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: .75rem 0;
+    line-height: 1.2;
+}
+.grafico{
+    
+min-height:30rem;
+background-repeat:no-repeat;
+background-size: contain;
+grid-column: 1 / 3;
+margin: 10px;
+}
+.grafico--camisa{
+        grid-row: 2 / 3;
+    
+    background-image: url(../img/grafico1.jpg);
+   
+}
+.grafico--node{
+    background-image: url(../img/grafico2.jpg);
+    grid-row: 8 / 9;
+    }
+    .grafico--node{
+        grid-row: 5/6;
+        grid-column: 2/4;
+        }
+@media(mind-with:768px){
+    .grafico--node{
+        grid-row: 5/6;
+        grid-column: 2/4;
+        }
+}
+
+/* PAGINA NOSOTROS*/
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+
+@media(min-width:768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        column-gap: 2rem;
+    
+    }
+    
+}
+
+.nosotros__imagen{
+    grid-row: 1/2;
+
+}
+@media(min-width:768px){
+    .nosotros__imagen{
+        grid-column: 2 / 3;
+    }
+}
+
+.bloques{
+
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 2rem;
+}
+@media(min-width:768px){
+    .bloques{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+.bloque{
+    text-align: center;
+}
+.bloque__titulo{
+    margin: 0;
+}
+.bloque__imagen{
+    width: 50%;
 }
