@@ -7,130 +7,186 @@
 
 /* Variables */
 :root {
-    --color-primary:linear-gradient(90deg, #000428, #004E92);
+    --color-primary: linear-gradient(90deg, #000428, #004E92);
     --color-secondary: #2ecc71;
     --color-text: #333;
     --color-blanco: #f4f4f5;
     --font-family: 'Arial', sans-serif;
-    
 }
 
-
+/* Global Styles */
 body {
     font-family: var(--font-family);
     font-size: 16px;
     color: var(--color-text);
-    background:var(--color-primary);
+    background: var(--color-primary);
     line-height: 1.6;
     display: flex;
-    justify-content:center;
     flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Evita scroll horizontal */
 }
-.header{
+
+/* Header */
+.header {
     display: flex;
-    justify-content:space-around;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
     height: 100px;
-    
 }
-.header h1{
-    font-size: 1.5rem; 
-    color:var(--color-blanco); /* Color principal del texto */
+
+.header h1 {
+    font-size: 1.5rem;
+    color: var(--color-blanco);
     text-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.4), /* Sombra inferior */
-        -2px -2px 5px rgba(255, 255, 255, 0.6); /* Brillo superior */
-    
+        2px 2px 5px rgba(0, 0, 0, 0.4), 
+        -2px -2px 5px rgba(255, 255, 255, 0.6);
     text-align: center;
-    border-radius: 5px; /* Suaviza bordes */
-    
 }
+
+
 .header nav {
-    flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: center;
+    gap: 20px; /* Espaciado entre enlaces */
 }
 
 .header a {
-    color:var(--color-blanco);
+    color: var(--color-blanco);
     text-decoration: none;
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
 }
 
 .header a::after {
-    content: ""; /* Crea el pseudo-elemento */
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px; /* Grosor de la línea */
-    background-color: var(--color-secondary); /* Color de la línea */
-    transition: width 0.3s ease-out; /* Animación suave */
+    height: 2px;
+    background-color: var(--color-secondary);
+    transition: width 0.3s ease-out;
 }
 
 .header a:hover::after {
-    width: 100%; /* La línea crece al 100% del ancho del enlace */
-    background-color: var(--color-secondary);
+    width: 100%;
 }
-.header a:hover{
-    color:var(--color-secondary);
+
+.header a:hover {
+    color: var(--color-secondary);
 }
-main{
-    background-image:url(../imagenes/Background.png);
-    background-repeat: repeat;
+
+/* Main Section */
+main {
+    flex: 1;
+    background-image: url(../imagenes/Background.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px; /* Espaciado interno */
 }
-.main__1{
+
+/* Main Block 1 */
+.main__1 {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 30;
-    height:300px;
-    
-   height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    align-items: center;
+    height: 560px;
 }
-.main__1 h2{
-    font-size:40px;
+
+.main__1 h2, .main__1 h3 {
     color: var(--color-blanco);
-   text-shadow: 2px 2px 5px rgba(8, 8, 8, 0.4);
+    text-shadow: 2px 2px 5px rgba(8, 8, 8, 0.4);
+    opacity: 0; /* Oculto inicialmente */
+    transform: translateY(20px); /* Ligeramente desplazado hacia abajo */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Efecto suave */
 }
-.main__1 h3{
-    font-size:20px;
-    color: var(--color-blanco);
-   text-shadow: 2px 2px 5px rgba(8, 8, 8, 0.4);
+h2.visible, h3.visible {
+    opacity: 1; /* Totalmente visibles */
+    transform: translateY(0); /* En su posición normal */
 }
-.main__2{
-    height: 250px;
+
+.main__1 h2 {
+    font-size: 2.5rem;
+}
+
+.main__1 h3 {
+    font-size: 3.125rem;
+}
+
+/* Main Block 2 */
+.main__2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 5px;
+    
 }
 
+/* Main Block 3 */
+.main__3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite adaptación en pantallas pequeñas */
+    gap: 30px;
+}
 
-.footer{
+.main__3__bloque {
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 180px; /* Mantén el tamaño del contenedor */
+    height: 180px;
+    background-color:var(--color-blanco); /* Fondo de ejemplo */
+    border-radius: 50%; /* Fondo circular */
+    overflow: hidden; /* Asegura que las imágenes no sobresalgan */
+    opacity: 0;
+    transform: scale(0.8); /* Los círculos comienzan más pequeños */
+    transition: opacity 4.5s ease-out, transform 4.5s ease-out;
+}
+.main__3__bloque.visible {
+    opacity: 1;
+    transform: scale(1); /* Escala normal */
+}
+/* Footer */
+.footer {
     text-align: center;
-    height:80px;
-    background-color: #333;
-  
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer p{
+
+.footer p {
     color: var(--color-blanco);
 }
 
+/* Images and Links */
 a img {
-    width: 40px; /* Ajusta según tu diseño */
-    height: 40px; /* Ajusta según tu diseño */
-    margin-left: 3.125rem;
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Animación suave */
-}
-a img:hover {
-    transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
-    opacity: 0.8; /* Reduce ligeramente la opacidad */
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.main__2 h2{
+    color:var(--color-blanco)
+}
