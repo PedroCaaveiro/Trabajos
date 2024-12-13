@@ -88,13 +88,14 @@ padding: 0;
 }
 .logo{
 color: var(--blanco);
+
 }
 .logo__nombre{
 font-weight: 400;
 }
 .logo__bold{
 font-weight: 700;
-text-decoration: solid;
+
 
 }
 @media(min-width:768px){
@@ -143,4 +144,31 @@ text-decoration: solid;
 }
 .boton--primario{
     background-color:var(--negro);
+    padding: 1rem;
+    border-radius: 1.5625rem;
+}
+.boton--secundario{
+    background-color: var(--primario);
+}
+.cursos{
+    list-style: none;
+}
+.widget-curso__label{
+font-family: var(--fuenteHeading);
+font-weight: bold;
+}
+.widget-curso__info{
+    font-weight: normal;
+}
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.widget-curso__label,
+.widget-curso__info{
+   font-size: 2rem;
 }
