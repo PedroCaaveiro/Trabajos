@@ -61,7 +61,7 @@ function closeContactForm() {
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita el envío tradicional del formulario
 
-    // Aquí puedes agregar lógica para enviar el formulario, como una petición AJAX o una validación.
+   
 
     // Cerrar el modal del formulario después de "enviar"
     alert("Formulario enviado con éxito");

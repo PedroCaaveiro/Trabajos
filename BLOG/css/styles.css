@@ -201,4 +201,46 @@ font-weight: bold;
         grid-template-columns: repeat(2,1fr);
         column-gap: 2rem;
     }
+    .curso{
+        padding: 3rem;
+        border-bottom: 1px solid var(--gris) ;
+    }
+    .curso:last-of-type{
+        border:none;
+    }
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+
+    }
+}
+.contacto-bg{
+    background-image: url(../imagenes/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulario{
+background-color: var(--blanco);
+margin:-5rem auto 0 auto;
+width:95%;
+padding: 5rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--negro);
+}
+.campo__field--textarea{
+height: 12.5rem;
 }
