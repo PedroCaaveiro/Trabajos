@@ -247,10 +247,10 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: var(--color-text);
+    color: var(--color-blanco);
     align-items: flex-start;
     padding: 20px;
-    background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+    background: linear-gradient(145deg, #71939e, #244265);
     border-radius: 12px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease-in-out;
@@ -267,7 +267,7 @@ form textarea {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background: #f9f9f9;
+    background: #fdfdfd;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1), inset -2px -2px 6px rgba(255, 255, 255, 0.7);
 
     transition: all 0.2s ease-in-out;
@@ -278,11 +278,12 @@ form textarea:focus {
     border-color: #3498db;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.2), inset -2px -2px 6px rgba(255, 255, 255, 0.9);
     outline: none;
+    background: linear-gradient(to right, #add8e6, #ffffff);
 }
 
 form button {
     padding: 12px 20px;
-    background-color: #3498db;
+    background: linear-gradient(to right, #89bcc6, #5e5c5c);
     color: white;
     border: none;
     border-radius: 8px;
@@ -292,7 +293,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #2980b9;
+    background-color: #254b64;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
 }
@@ -380,8 +381,10 @@ a img:hover {
   
 }
 .main__3__bloque img{
+   
     width: 50%;
 }
+
 
 
 
@@ -395,3 +398,4 @@ a img:hover {
 
     
 }
+
