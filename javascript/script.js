@@ -96,16 +96,112 @@ console.log(producto3);
 */
 
 function sumar(){
-    console.log(10+10);
+   // console.log(10+10);
 }
 sumar();
 
 const sumar2 = function(){
-    console.log(3+3);
+    //console.log(3+3);
 }
 sumar2();
 
 (function(){
-console.log("esto a s una function");
+//console.log("esto a s una function");
 })();
 
+const reservacion = {
+    nombre:"pedro",
+    apellido : "caaveiro",
+    total:600,
+    pagado:true,
+    informacion: function() 
+{
+    console.log(`el cliente ${this.nombre} reservo y su cantidad a pagar es de ${this.total}`);
+}
+}
+
+//reservacion.informacion();
+
+function Productos(nombre,precio){
+this.nombre = nombre;
+this.precio = precio;
+
+
+}
+const producto6 = new Productos("monitor curvo de 40",800);
+//console.log(producto6);
+
+function formatearProducto(producto){
+
+    return `El producto ${producto.nombre} tiene un precio ${producto.precio}`;
+
+}
+//console.log(formatearProducto(producto6));
+
+// prototype 
+//Productos.prototype.formatearProducto= function(){};
+
+class Producto1{
+constructor(nombre,precio){
+this.nombre = nombre;
+this.precio = precio;
+}
+formatearProducto(){
+    return `El producto ${this.nombre} tiene un precio ${this.precio}`;
+}
+
+
+}
+const producto10 = new Producto1("monitoe curvo 50",600);
+const producto11 = new Producto1("monitoe curvo 20",200);
+
+//console.log(producto11.formatearProducto());
+//console.log(producto10);
+
+class Libro extends Productos{
+
+    constructor(nombre,precio,isbn){
+super(nombre,precio);
+    }
+
+}
+//const libro1 = new Libro("javasvript", 500,15151515);
+//console.log(libro1.formatearProducto());
+
+/*
+const numero10 = 20;
+const numero11 = 30;
+
+console.log(numero11);
+console.log(numero10);
+try {
+    
+    console.log(numero12);
+} catch (error) {
+    console.log("hay un errror no existe el numero")
+}*/
+
+const usuarioAutenticado = new Promise((resolve,reject) =>{
+const auth = false;
+
+if(auth){
+resolve("usuario autentico");
+}else{
+reject("usuario falso");
+}
+});
+usuarioAutenticado.then((resultado) => console.log(resultado))
+                    .catch((resultado) => console.log(resultado));
+
+
+                 const boton = document.querySelector("#boton")
+
+                 boton.addEventListener("click",function(){
+                    Notification.requestPermission()
+                    .then(resultado => console.log("el resultado es:", resultado))
+
+                    if (Notification.permission == 'granted') {
+                        new Notification("esta es una ntificacion")
+                    }
+
+                 });
