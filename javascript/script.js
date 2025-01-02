@@ -1,6 +1,6 @@
 /* variables */
-let nombre = "pedro";
-let apellido =" caaveiro";
+/*let nombre = "pedro";
+let apellido ="caaveiro";
 let edad = 42;
 const dias = ["lunes","martes","miercoles","jueves","viernes"];
 
@@ -41,4 +41,71 @@ console.log(resultado);
 
 let numero3 = Math.random() * 30;
 console.log(numero3);
- 
+
+console.log(`nombre: ${nombre} apellido: ${apellido}`);
+// objetovs 
+const nombreProducto = "pantalla";
+const precio1 = 20;
+const disponible = true;
+
+const objetc ={
+    nombreProducto: "pantalla",
+    precio:  300,
+    disponible:  false
+};
+
+console.log(objetc.nombreProducto);
+
+console.log(objetc["disponible"]);
+
+delete objetc.nombreProducto;
+console.log(objetc);
+
+const {precio} = objetc.precio;
+
+console.log(precio);
+
+const producto3 ={
+    nombreProducto: "pantalla",
+    precio:  300,
+    disponible:  false
+};
+// no permite agregar
+Object.freeze(producto3);
+producto3.imagen = "imagen.jpg";
+
+console.log(producto3);
+
+ const nuevoProducto = {
+    ...producto,...producto2
+ };
+ console.log(nuevoProducto);
+
+ const numeros =[10,20,30,40,50];
+ console.table(numeros);
+ const arreglo = ["hola",1,true,"no"];
+ console.table(arreglo);
+ console.log(arreglo[2]);
+
+ numeros.forEach( function(numero) {
+        console.log(numero)
+ });
+
+ const nuevoArreglo = [...numeros,60,70];
+ console.log(nuevoArreglo);
+*/
+
+function sumar(){
+    console.log(10+10);
+}
+sumar();
+
+const sumar2 = function(){
+    console.log(3+3);
+}
+sumar2();
+
+(function(){
+console.log("esto a s una function");
+})();
+
