@@ -83,7 +83,7 @@ text-align: center;
    
 }
 .navegacion{
-    background-color:var(--secundario_oscuro);
+    background-color:var(--blanco);
     padding-inline: 1rem 0;
     display: flex;
     justify-content: center;
@@ -91,7 +91,7 @@ text-align: center;
 }
 .navegacion__enlace{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
+    color: var(--primario);
     font-size: 3rem;
 }
 .navegacion__enlace--activo,
@@ -111,11 +111,10 @@ text-align: center;
 }
 }
 .producto{
-background-color:var(--secundario_oscuro);
+background-color: var(--blanco);
 padding: 2rem;
 text-align: center;
 margin: 10px;
-background-color: var(--secundario_oscuro);
 border-radius:0 3.125rem 4.6875rem 4.6875rem; /* Bordes altamente redondeados */
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Agrega un efecto 3D */
 }
@@ -123,10 +122,11 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Agrega un efecto 3D */
 
 .producto__nombre{
 font-size: 4rem;
+color: var(--negro);
 }
 .producto_precio{
     font-size:20px;
-color:var(--secundario);
+color: var(--negro);
 }
 .producto__nombre,
 .producto__precio{
@@ -134,8 +134,8 @@ color:var(--secundario);
     margin: .75rem 0;
     line-height: 1.2;
 }
-.grafico{
-    
+
+.grafico{   
 min-height:30rem;
 background-repeat:no-repeat;
 background-size: contain;
@@ -144,13 +144,16 @@ margin: 10px;
 }
 .grafico--camisa{
         grid-row: 2 / 3;
-    
+        
+    border: 10px solid white;
     background-image: url(../img/grafico1.jpg);
+    background-size:cover;
    
 }
 .grafico--node{
     background-image: url(../img/grafico2.jpg);
     grid-row: 8 / 9;
+    border: 10px solid var(--blanco);
     }
     .grafico--node{
         grid-row: 5/6;
