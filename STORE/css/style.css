@@ -119,6 +119,21 @@ border-radius:0 3.125rem 4.6875rem 4.6875rem; /* Bordes altamente redondeados */
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Agrega un efecto 3D */
 }
 
+.producto__nombre,
+.producto_precio {
+    color: black; /* Color inicial del texto */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.producto:hover {
+    background-color: black; /* Fondo negro al pasar el puntero */
+}
+
+.producto:hover .producto__nombre,
+.producto:hover .producto_precio {
+    color: red; /* Texto rojo al pasar el puntero */
+}
+
 
 .producto__nombre{
 font-size: 4rem;
