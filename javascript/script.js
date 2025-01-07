@@ -94,7 +94,7 @@ console.log(producto3);
  const nuevoArreglo = [...numeros,60,70];
  console.log(nuevoArreglo);
 */
-
+/*
 function sumar(){
    // console.log(10+10);
 }
@@ -140,7 +140,7 @@ function formatearProducto(producto){
 
 // prototype 
 //Productos.prototype.formatearProducto= function(){};
-
+/*
 class Producto1{
 constructor(nombre,precio){
 this.nombre = nombre;
@@ -180,7 +180,7 @@ try {
 } catch (error) {
     console.log("hay un errror no existe el numero")
 }*/
-
+/*
 const usuarioAutenticado = new Promise((resolve,reject) =>{
 const auth = false;
 
@@ -205,3 +205,30 @@ usuarioAutenticado.then((resultado) => console.log(resultado))
                     }
 
                  });
+
+function descargarClientes(){
+    return new Promise (resolver =>{
+        console.log("descargado clientes... espere....")
+        setTimeout(function(){
+           resolve("los clientes fueron descargados");
+            },5000);
+
+    });
+}
+
+
+ async function obtenerEmpleado(){
+const archivo = 'empleados.json';
+    fetch(archivo)
+    .then(resultado =>{
+        return resultado.json();
+    })
+    .then(datos =>{
+        console.log(datos)
+    })
+const resultado = await fetch(archivo);
+const datos = await resultado.json();
+console.log(datos);
+}
+obtenerEmpleado();*/
+
