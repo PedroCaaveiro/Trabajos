@@ -244,3 +244,9 @@ padding: 5rem;
 .campo__field--textarea{
 height: 12.5rem;
 }
+.parrafo{
+
+text-align: center;
+text-transform: uppercase;
+color: var(--negro);
+}
