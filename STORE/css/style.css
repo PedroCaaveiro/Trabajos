@@ -42,6 +42,7 @@
   .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+    
   }
   
   /* Títulos */
@@ -320,6 +321,40 @@
       
   }
   
+/* PAGINA PRODUCTO*/
+
+.video{
+
+height:600px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+
+}
+.video-container {
+  width: 100%; /* La caja ocupa el ancho completo del contenedor */
+  position: relative;
+  padding-bottom: 50%; /* Relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* El iframe se ajusta al ancho de la caja */
+  height: 100%; /* El iframe mantiene la relación de aspecto */
+  border: none;
+}
+.foto__1{
+  background-color:var(--blanco);
+  height: 410px;
+  margin-top: .3125rem;
+  
+}
 
   
  
