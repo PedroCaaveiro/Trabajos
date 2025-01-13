@@ -99,11 +99,17 @@
   .iconos {
     width: 30px;
     height: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    transform-style: preserve-3d; /* Necesario para el efecto 3D */
+    
   }
   
   .iconos:hover {
-    box-shadow: 2px 5px 5px black;
-    background-color: var(--blanco);
+    background-color: rgb(226, 222, 222);
+    transform: rotateX(15deg) rotateY(15deg) scale(1.2); /* Efecto 3D y agrandado */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para el efecto 3D */
+    
+    
   }
   
   /* Logo del header */
