@@ -99,18 +99,20 @@
   .iconos {
     width: 30px;
     height: 30px;
+     
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
     transform-style: preserve-3d; /* Necesario para el efecto 3D */
     
   }
   
   .iconos:hover {
-    background-color: rgb(226, 222, 222);
+    filter: invert(1) brightness(2) drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5)); /* Efecto de sombra al pasar el ratón */
     transform: rotateX(15deg) rotateY(15deg) scale(1.2); /* Efecto 3D y agrandado */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para el efecto 3D */
-    
+    filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+    filter: invert(1) brightness(2);
     
   }
+  
   
   /* Logo del header */
   .header_logo {
@@ -458,4 +460,44 @@ opacity:0.7;
     width: 50%;
   }
   
- 
+  .contacto a{
+    width: 130px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block; 
+  line-height: 40px; 
+  background-color: var(--negro);
+  text-shadow: 0px 0px 52px 10px #000000;
+  color: var(--blanco);
+  font-size: 30px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+  }
+  
+.contacto a:active {
+  transform: translateY(3px); 
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* pagina contacto*/
+
+.contenedor_contacto{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  background-image:url(../img/foto_contacto.png);
+  background-size: cover;
+}
+.formulario_contacto{
+  background: linear-gradient(45deg, rgb(191, 186, 186), rgb(129, 45, 45), rgb(157, 124, 124));
+  width: 600px;
+  height:600px;
+  border-radius: .9375rem;
+  opacity: 0.6;
+  border: .125rem solid var(--blanco);
+  margin: 1.25rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), 
+  -10px -10px 20px rgba(255, 255, 255, 0.3);
+}
