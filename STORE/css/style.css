@@ -491,13 +491,74 @@ opacity:0.7;
   background-size: cover;
 }
 .formulario_contacto{
-  background: linear-gradient(45deg, rgb(191, 186, 186), rgb(129, 45, 45), rgb(157, 124, 124));
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(191, 186, 186, 0.6), rgba(129, 45, 45, 0.6), rgba(157, 124, 124, 0.6));
   width: 600px;
   height:600px;
   border-radius: .9375rem;
-  opacity: 0.6;
   border: .125rem solid var(--blanco);
   margin: 1.25rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4), 
   -10px -10px 20px rgba(255, 255, 255, 0.3);
+ 
+}
+.formulario_contacto h2{
+  opacity:1;
+  text-shadow:2px 2px 5px #000000;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px; /* Espacio entre los campos */
+}
+
+.input {
+  width:300px;
+  padding: 12px 10px 12px 10px;
+  border: 1px solid var(--gris-claro);
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid var(--blanco);
+  background: transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave por defecto */
+}
+
+.input:focus {
+  border-color: var(--negro);
+  border-width: 2px;
+  color:var(--blanco);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa en foco */
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--gris-oscuro);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  
+}
+
+/* Cuando el input tiene contenido o está enfocado */
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+  top: -10px;
+  font-size: 12px;
+  color: var(--blanco);
+}
+
+/* Asegurarse de que el label no se mueva excesivamente */
+.input:focus + .label {
+  top: -10px;
+  font-size: 12px;
+  color: var(--blanco);
 }
