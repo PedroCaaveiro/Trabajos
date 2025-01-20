@@ -1,5 +1,7 @@
 @use 'variables' as v;
 
+
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -16,6 +18,9 @@ body {
     font-style: normal;
     color: v.$negro;
     font-size: 2rem;
+    &.overflow-hiden{
+        overflow: hidden;
+    }
 }
 p {
     color: v.$negro;

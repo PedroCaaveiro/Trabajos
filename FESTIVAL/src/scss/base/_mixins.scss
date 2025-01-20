@@ -29,8 +29,13 @@
     margin: 0 auto;
 }
 
-@mixin grid($columnas){
-    display:grid;
-    grid-template-columns: repeat($columnas,1fr);
-    gap: 80px;
+@mixin grid($columnas, $gap: 80px) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;  // Utiliza el parámetro $gap
+}
+@mixin resetear-lista{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
