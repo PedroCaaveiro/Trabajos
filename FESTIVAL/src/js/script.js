@@ -129,7 +129,7 @@ function resaltarEnlaces() {
         }
       });
     }, {
-      threshold: 0 // Cambia a la mitad de la sección visible
+      threshold: 0.3 // Cambia a la mitad de la sección visible
     });
     
     sections.forEach(section => {
