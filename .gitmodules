@@ -1,3 +1,6 @@
 [submodule "Store"]
 	path = Store
 	url = https://github.com/PedroCaaveiro/StoreDucati.git
+[submodule "Festival"]
+	path = Festival
+	url = https://github.com/PedroCaaveiro/Festival.git
