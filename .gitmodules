@@ -7,3 +7,6 @@
 [submodule "blogcafe"]
 	path = blogcafe
 	url = https://github.com/PedroCaaveiro/BlogCafe.git
+[submodule "reloj"]
+	path = reloj
+	url = https://github.com/PedroCaaveiro/Reloj.git
