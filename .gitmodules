@@ -4,3 +4,6 @@
 [submodule "Festival"]
 	path = Festival
 	url = https://github.com/PedroCaaveiro/Festival.git
+[submodule "blogcafe"]
+	path = blogcafe
+	url = https://github.com/PedroCaaveiro/BlogCafe.git
