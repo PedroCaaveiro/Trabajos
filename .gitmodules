@@ -1,0 +1,12 @@
+[submodule "Store"]
+	path = Store
+	url = https://github.com/PedroCaaveiro/StoreDucati.git
+[submodule "Festival"]
+	path = Festival
+	url = https://github.com/PedroCaaveiro/Festival.git
+[submodule "blogcafe"]
+	path = blogcafe
+	url = https://github.com/PedroCaaveiro/BlogCafe.git
+[submodule "reloj"]
+	path = reloj
+	url = https://github.com/PedroCaaveiro/Reloj.git
