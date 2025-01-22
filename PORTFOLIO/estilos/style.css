@@ -387,15 +387,60 @@ a img:hover {
 
 
 
-
-.footer {
+.footer p {
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    
-    height:8.9375rem;
+    font-size: 12px;
+    color: var(--color-blanco);
+    padding: 1rem 0;
+
 
 }
-
     
 }
 
+/* PAGINA PERSONAL*/
+
+.main_personal{
+height:750px;
+display: flex;
+
+
+}
+.foto_personal{
+    width: 50%;
+    height: 100%;
+   
+    margin: 5px 5px 5px 5px;
+    border:2px solid var(--color-blanco);
+    background-image: url(../imagenes/foto_mi.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sobremi_personal{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+    height: 100%;
+    
+    margin: 5px 5px 5px 5px;
+    border:2px solid var(--color-blanco)
+}
+.sobremi_personal h2{
+    color: var(--color-blanco);
+    margin-left:5px;
+    font-size: 30px;
+    margin-bottom:30px;
+}
+.sobremi_personal p{
+padding:0 5px 5px 5px;
+color: var(--color-blanco);
+}
+.sobremi_personal ul,li{
+    margin-left: 1.25rem;
+    margin-bottom:20px;
+    color: var(--color-blanco);
+}
