@@ -7,10 +7,9 @@
 
 
 :root {
-    --color-primary: linear-gradient(90deg, #000428, #4387c3);
-    --color-secondary: #2ecc71;
+    --color-primary: radial-gradient(circle, #1c3b2e, #4b814b, #41a841, #99ff99, #3cddc2);
     --color-text: #333;
-    --color-blanco: #f4f4f5;
+    --color-blanco: #ffffff;
     --font-family: 'Arial', sans-serif;
 }
 
@@ -200,6 +199,11 @@ h3.visible {
     transform: scale(1);
 }
 
+.main__3__bloque.visible img:hover{
+    width:50%;
+    
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -250,7 +254,7 @@ form {
     color: var(--color-blanco);
     align-items: flex-start;
     padding: 20px;
-    background: linear-gradient(145deg, #71939e, #244265);
+    background: linear-gradient(145deg, #546064, #c1cad3);
     border-radius: 12px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease-in-out;
@@ -269,7 +273,6 @@ form textarea {
     border-radius: 8px;
     background: #fdfdfd;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.1), inset -2px -2px 6px rgba(255, 255, 255, 0.7);
-
     transition: all 0.2s ease-in-out;
 }
 
@@ -400,47 +403,74 @@ a img:hover {
 }
 
 /* PAGINA PERSONAL*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
 
-.main_personal{
-height:750px;
-display: flex;
-
-
-}
-.foto_personal{
-    width: 50%;
-    height: 100%;
-   
-    margin: 5px 5px 5px 5px;
-    border:2px solid var(--color-blanco);
-    background-image: url(../imagenes/foto_mi.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
+   /* background-color: #075183;*/
+    text-align: center;
 }
 
-.sobremi_personal{
+.titulo_personal {
+    font-size: 50px;
+}
+
+.profesion_personal {
+    grid-column: 1/2;
+    font-size: 20px;
+}
+
+.titulo_personal,
+.profesion_personal {
+    color: var(--color-blanco);
+}
+
+.texto_experiencia{
+    /*background-color: #3498db;*/
+    color: var(--color-blanco);
+    
+    text-align: left;
+    grid-column: 2/2;
+    grid-row: 1/5;
+    margin-top: 50px;
+    place-content: center;
     display: flex;
     flex-direction: column;
-    
-    width: 50%;
-    height: 100%;
-    
-    margin: 5px 5px 5px 5px;
-    border:2px solid var(--color-blanco)
+    justify-content: flex-start;
+    padding:10px 5px 0 5px;
 }
-.sobremi_personal h2{
+.texto_experiencia p{
+    margin-bottom: 20px;
+}
+.texto{
+
+height:450px;
+}
+
+.indice {
+    height: 100px;
+    gap: 20px;
+    grid-column: 1/1;
+    grid-row: 3/3;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+}
+
+.indice a {
+
+    text-decoration: none;
     color: var(--color-blanco);
-    margin-left:5px;
-    font-size: 30px;
-    margin-bottom:30px;
 }
-.sobremi_personal p{
-padding:0 5px 5px 5px;
-color: var(--color-blanco);
+
+.indice a:hover {
+    color: var(--color-text)
 }
-.sobremi_personal ul,li{
-    margin-left: 1.25rem;
-    margin-bottom:20px;
-    color: var(--color-blanco);
+.experiencia{
+    height:300px;
+   /* background-color: #333;*/
+    margin-bottom: 10px;
+
 }
