@@ -16,7 +16,7 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 
 ### 3. Reloj
 - **Tecnologías usadas**: HTML, CSS, JavaScript.
-- **Estado**: En desarrollo.
+- **Estado**: Proyecto terminado.
 - **Descripción**: Aplicación interactiva que simula un reloj en tiempo real.
 
 ### 4. Store Ducati
