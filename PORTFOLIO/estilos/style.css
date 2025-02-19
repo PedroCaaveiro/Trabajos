@@ -519,6 +519,7 @@ a img:hover {
     background-color:#4b814b;
     margin-bottom: 10px;
     display: flex;
+    border:2px solid var(--color-blanco);
     
   
 }
@@ -526,6 +527,7 @@ a img:hover {
     opacity: 0.5;
     border: 2px solid #3a6b3a; /* Borde base */
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5); /* Sombra 3D */
+    border:2px solid var(--color-text);
 }
 .year{
     width:100px;
