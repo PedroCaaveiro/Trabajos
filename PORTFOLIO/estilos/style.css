@@ -519,6 +519,7 @@ a img:hover {
     background-color:#4b814b;
     margin-bottom: 10px;
     display: flex;
+    
   
 }
 .experiencia:hover{
@@ -527,21 +528,43 @@ a img:hover {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5); /* Sombra 3D */
 }
 .year{
-    width: 25%;
-    background-color: red;
-}
-.conocimientos{
+    width:100px;
+    height:100%;
     display: flex;
-    height:200px;
-    width: 100%;
-    background-color: #254b64;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido h1{
     text-align: center;
-    justify-content: space-around;
+}  
+.contenido ul{
+    list-style: none;
+    padding-inline:5px;
 }
 .habilidades{
-    width: 100%;
-   display: flex;
-   justify-content: space-around;
+    width:100%;
+    height:50px;
+}
+.habilidades ul{
    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.habilidades ul li{
+    width:120px;
+    padding: 5px;
+    height: 35px;
+    background-color: #333;
+    text-align: center;
+    border-radius: 15px;
 }
