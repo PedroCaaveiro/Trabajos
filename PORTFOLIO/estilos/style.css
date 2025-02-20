@@ -521,6 +521,7 @@ a img:hover {
     display: flex;
     border:2px solid var(--color-blanco);
     
+    
   
 }
 .experiencia:hover{
@@ -530,13 +531,15 @@ a img:hover {
     border:2px solid var(--color-text);
 }
 .year{
-    width:100px;
+    width:210px;
     height:100%;
+    background-color: #176127;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5px;
+    font-weight: bold;
 }
 .contenido{
     width: 100%;
@@ -544,10 +547,19 @@ a img:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 .contenido h1{
     text-align: center;
+    font-weight: bold;
 }  
+.contenido a{
+    text-decoration: none;
+    color:var(--color-blanco);  
+}
+.contenido p{
+    color:rgb(203, 191, 191);
+}
 .contenido ul{
     list-style: none;
     padding-inline:5px;
@@ -561,7 +573,9 @@ a img:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
+
 .habilidades ul li{
     width:120px;
     padding: 5px;
@@ -569,4 +583,5 @@ a img:hover {
     background-color: #333;
     text-align: center;
     border-radius: 15px;
+    color: #3498db; /* Azul Claro */
 }
