@@ -310,6 +310,7 @@ form button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
 }
 
@@ -515,7 +516,7 @@ a img:hover {
 }
 
 .experiencia {
-    height: 300px;
+    height: 350px;
     background-color:#4b814b;
     margin-bottom: 10px;
     display: flex;
@@ -584,4 +585,18 @@ a img:hover {
     text-align: center;
     border-radius: 15px;
     color: #3498db; /* Azul Claro */
+}
+
+/* pagina proyectos*/
+
+.main{
+width:100%;
+display:flex;
+flex-direction: column;
+}
+.section{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(92, 171, 116);
+    margin-bottom: 20px;
 }
