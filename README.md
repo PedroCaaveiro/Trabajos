@@ -29,6 +29,11 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 - **Estado**: En construcción.
 - **Descripción**: Mi portafolio personal donde reuniré todos mis proyectos y experiencia profesional.
 
+### 5. the Luxe Collection
+- **Tecnologías usadas**: (en construcción).
+- **Estado**: En construcción.
+- **Descripción**: Agencia inmobiliaria Con un diseño atractivo y con funcionalidades avanzadas
+
 ---
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
