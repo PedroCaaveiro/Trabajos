@@ -35,10 +35,13 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 - **Descripción**: Agencia inmobiliaria Con un diseño atractivo y con funcionalidades avanzadas
 
 ---
-### Proyectos desplegados
+### Proyectos Desplegados
 
-**Blog De Café  https://67d1bdc14cfd9200088d6f7a--dainty-begonia-49c71f.netlify.app/ ---
-**Reloj        --- https://67d1bf6d2253662414d7bea0--inquisitive-gelato-e9ba2f.netlify.app/ ---
-**Store Ducati --- https://67d1ca828dc32a0008324055--storeducati.netlify.app/ ---
+Aquí tienes algunos de mis proyectos desplegados en Netlify:
+
+- **Blog de Café**: [Visitar proyecto](https://67d1bdc14cfd9200088d6f7a--dainty-begonia-49c71f.netlify.app/)
+- **Reloj**: [Visitar proyecto](https://67d1bf6d2253662414d7bea0--inquisitive-gelato-e9ba2f.netlify.app/)
+- **Store Ducati**: [Visitar proyecto](https://67d1ca828dc32a0008324055--storeducati.netlify.app/)
+
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
