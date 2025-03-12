@@ -37,8 +37,8 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 ---
 ### Proyectos desplegados
 
-Blog De Café --- https://67d1bdc14cfd9200088d6f7a--dainty-begonia-49c71f.netlify.app/
-reloj        --- https://67d1bf6d2253662414d7bea0--inquisitive-gelato-e9ba2f.netlify.app/
-Store Ducati --- https://67d1ca828dc32a0008324055--storeducati.netlify.app/
+**Blog De Café  https://67d1bdc14cfd9200088d6f7a--dainty-begonia-49c71f.netlify.app/ ---
+**Reloj        --- https://67d1bf6d2253662414d7bea0--inquisitive-gelato-e9ba2f.netlify.app/ ---
+**Store Ducati --- https://67d1ca828dc32a0008324055--storeducati.netlify.app/ ---
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
