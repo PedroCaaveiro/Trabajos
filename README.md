@@ -43,6 +43,7 @@ Aquí tienes algunos de mis proyectos desplegados en Netlify:
 - **Reloj**: [Visitar proyecto](https://67d1bf6d2253662414d7bea0--inquisitive-gelato-e9ba2f.netlify.app/)
 - **Store Ducati**: [Visitar proyecto](https://67d1ca828dc32a0008324055--storeducati.netlify.app/)
 - **The Luxe Collection**: [Visitar proyecto](http://proyectospedro.42web.io/The_Luxe_Collection/index.php)
+- - **Live Festival**: [Visitar proyecto](https://dazzling-biscochitos-43b6ba.netlify.app/#lineup)
 
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
