@@ -589,14 +589,77 @@ a img:hover {
 
 /* pagina proyectos*/
 
+
+
 .main{
 width:100%;
 display:flex;
 flex-direction: column;
 }
-.section{
-    width: 100%;
+
+.seccion {
+    display: flex;
+    flex-wrap: wrap;
     height: 400px;
-    background-color: rgb(92, 171, 116);
-    margin-bottom: 20px;
-}
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  
+  .imagen, .texto {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .imagen img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease;
+  }
+  
+ 
+  .texto {
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+  }
+  
+  .texto h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #00ffb3;
+  }
+  
+  .boton {
+    background-color: #00ffb3;
+    color: #111;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .boton:hover {
+    background-color: #00c799;
+  }
+  .video{
+    width:600px;
+    height:400px;
+   
+    margin: 0 auto; 
+  }
+  .video video{
+    width: 100%;
+    
+  }
+  h3{
+    color:#00ffb3;
+  }
+ 

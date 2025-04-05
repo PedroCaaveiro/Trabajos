@@ -11,7 +11,7 @@ const ver = new IntersectionObserver((entries, observer) => {
         }
     });
 }, {
-    threshold: 0.5 // El 50% del elemento debe ser visible
+    threshold: 0.5 
 });
 
 // Aplica el observer a cada bloque
@@ -30,7 +30,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
 }, {
-    threshold: 0.5 // El 50% del elemento debe ser visible
+    threshold: 0.5 
 });
 
 // Aplica el observer a ambos encabezados
@@ -57,14 +57,16 @@ function closeContactForm() {
     document.getElementById("contactModal").style.display = "none"; // Oculta el modal del formulario
 }
 
-// Evitar que el formulario se envíe de manera tradicional (simular el envío para el ejemplo)
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita el envío tradicional del formulario
 
-   
 
-    // Cerrar el modal del formulario después de "enviar"
-    alert("Formulario enviado con éxito");
-    closeContactForm();
-});
 
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.carrusel-imagen');
+    let current = 0;
+
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 4000);
+  });
