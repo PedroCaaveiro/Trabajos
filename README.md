@@ -29,7 +29,7 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 - **Estado**: En construcción.
 - **Descripción**: Mi portafolio personal donde reuniré todos mis proyectos y experiencia profesional.
 
-### 6. the Luxe Collection
+### 6. The Luxe Collection
 - **Tecnologías usadas**: (html, SCSS , GULP ,JAVASCRIPT ,PHP).
 - **Estado**: Proyecto terminado
 - **Descripción**: Agencia inmobiliaria Con un diseño atractivo y con funcionalidades avanzadas
