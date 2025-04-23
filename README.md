@@ -39,7 +39,7 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 
 Aquí tienes algunos de mis proyectos desplegados en Netlify:
 
-- **Blog de Café**: [Visitar proyecto](https://67d1bdc14cfd9200088d6f7a--dainty-begonia-49c71f.netlify.app/)
+- **Blog de Café**: [Visitar proyecto](https://dainty-begonia-49c71f.netlify.app/)
 - **Reloj**: [Visitar proyecto](https://67d1bf6d2253662414d7bea0--inquisitive-gelato-e9ba2f.netlify.app/)
 - **Store Ducati**: [Visitar proyecto](https://67d1ca828dc32a0008324055--storeducati.netlify.app/)
 - **The Luxe Collection**: [Visitar proyecto](http://proyectospedro.42web.io/The_Luxe_Collection/index.php)
