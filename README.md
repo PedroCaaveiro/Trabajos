@@ -34,6 +34,11 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 - **Estado**: Proyecto terminado
 - **Descripción**: Agencia inmobiliaria Con un diseño atractivo y con funcionalidades avanzadas
 
+- ### 7. Barber App
+- **Tecnologías usadas**: (html, SCSS , GULP ,JAVASCRIPT ,PHP).
+- **Estado**: Proyecto terminado
+- **Descripción**: Aplicación web desarrollada bajo el patrón de arquitectura MVC para la gestión integral de una barbería. Cuenta con un diseño responsivo y funcionalidades completas, incluyendo registro de usuarios con confirmación por correo electrónico, recuperación de contraseña vía email y un panel de administración para la creación, edición y eliminación de servicios. 
+
 ---
 ### Proyectos Desplegados
 
@@ -44,6 +49,7 @@ Aquí tienes algunos de mis proyectos desplegados en Netlify:
 - **Store Ducati**: [Visitar proyecto](https://67d1ca828dc32a0008324055--storeducati.netlify.app/)
 - **The Luxe Collection**: [Visitar proyecto](http://proyectospedro.42web.io/The_Luxe_Collection/index.php)
 - **Live Festival**: [Visitar proyecto](https://dazzling-biscochitos-43b6ba.netlify.app)
+- **Barber App**: [Visitar proyecto](http://proyectospedro.42web.io/AppSalon_php/public/)
 
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
