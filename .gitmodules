@@ -13,3 +13,6 @@
 [submodule "The_Luxe_Collection"]
 	path = The_Luxe_Collection
 	url = https://github.com/PedroCaaveiro/The_Luxe_Collection.git
+[submodule "AppSalon_php"]
+	path = AppSalon_php
+	url = https://github.com/PedroCaaveiro/AppSalon_php.git
