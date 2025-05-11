@@ -18,7 +18,7 @@
             <a href="index.html">Inicio</a>
             <a href="personal.html">Sobre Mí</a>
             <a href="proyectos.html">Proyectos</a>
-            <a href="contacto.html">Contacto</a>
+            
             </nav>
     </header>
 
@@ -62,7 +62,8 @@
         <div class="modal-content">
             <span class="close" onclick="closeContactForm()">&times;</span>
             <h3>Formulario de Contacto</h3>
-            <form id="contactForm" method="POST">
+            <form id="contactForm" action="https://formsubmit.co/pedro.caaveiro.moncadas@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://tusitio.netlify.app/gracias.html">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required><br><br>
 
