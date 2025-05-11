@@ -8,7 +8,7 @@
 
 :root {
     --color-primary: radial-gradient(circle, #1c3b2e, #4b814b, #41a841, #99ff99, #3cddc2);
-    --color-text: #333;
+    --color-text: #cfeae8;
     --color-blanco: #ffffff;
     --font-family: 'Arial', sans-serif;
 }
@@ -443,18 +443,24 @@ a img:hover {
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px 5px 0 5px;
+  
 
 
 }
 
 .texto_experiencia p {
     margin-bottom: 20px;
+    
+  
 }
-
 .texto {
-
-    height: 450px;
+    width:100%;
 }
+.texto p {
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
 
 /* Contenedor general */
 .indice {
@@ -625,10 +631,16 @@ flex-direction: column;
   }
   
  
-  .texto {
+  .texto_mi {
     flex-direction: column;
-    width: 50%;
+    width:100%;
     text-align: left;
+    gap: 1rem;
+  }
+   .texto {
+    flex-direction: column;
+    width:50%;
+    text-align: center;
     gap: 1rem;
   }
   
