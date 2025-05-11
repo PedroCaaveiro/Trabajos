@@ -608,7 +608,7 @@ flex-direction: column;
   }
   
   .imagen, .texto {
-    width: 50%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,6 +627,7 @@ flex-direction: column;
  
   .texto {
     flex-direction: column;
+    width: 50%;
     text-align: left;
     gap: 1rem;
   }
@@ -635,6 +636,9 @@ flex-direction: column;
     font-size: 2rem;
     margin-bottom: 0.5rem;
     color: #00ffb3;
+  }
+  .texto h3{
+    color: white;
   }
   
   .boton {
@@ -660,6 +664,6 @@ flex-direction: column;
     
   }
   h3{
-    color:#00ffb3;
+    color:rgb(3, 3, 3);
   }
  
