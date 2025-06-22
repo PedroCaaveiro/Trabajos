@@ -16,3 +16,6 @@
 [submodule "AppSalon_php"]
 	path = AppSalon_php
 	url = https://github.com/PedroCaaveiro/AppSalon_php.git
+[submodule "PORTFOLIO"]
+	path = PORTFOLIO
+	url = https://github.com/PedroCaaveiro/Portfolio.git
