@@ -17,15 +17,28 @@
             <a href="contacto.html">Contacto</a>
             </nav>
     </header>
-</section>
 
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <p id="modal-text"></p>
-        <button onclick="openContactForm()">Contactar</button>
-    </div>
-</div>
+
+<section class="contacto">
+
+  <h1>Contacto</h1>
+
+  <form class="contacto__formulario" action="https://formsubmit.co/pedro.caaveiro.moncadas@gmail.com" method="POST" novalidate>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="2" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="_replyto" placeholder="tu@correo.com" required />
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje..." required minlength="10"></textarea>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+
+</section>
 
 
 <footer class="footer">

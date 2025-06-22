@@ -692,6 +692,97 @@ flex-direction: column;
   box-sizing: border-box;
 }
 
+
+/*  ****** PAGINA CONTACTOS *******/
+
+.contacto {
+    min-height: 80vh;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--color-blanco);
+}
+
+.contacto h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-blanco);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    letter-spacing: 0.05em;
+}
+
+.contacto__formulario {
+    background: rgba(255 255 255 / 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacto__formulario label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-blanco);
+    letter-spacing: 0.03em;
+}
+
+.contacto__formulario input,
+.contacto__formulario textarea {
+    background: rgba(255 255 255 / 0.2);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    color: var(--color-blanco);
+    transition: border-color 0.3s ease, background 0.3s ease;
+    resize: vertical;
+    font-family: var(--font-family);
+}
+
+.contacto__formulario input::placeholder,
+.contacto__formulario textarea::placeholder {
+    color: #ffffff;
+}
+
+.contacto__formulario input:focus,
+.contacto__formulario textarea:focus {
+    outline: none;
+    background: rgba(255 255 255 / 0.4);
+    border-color: var(--color-text);
+    box-shadow: 0 0 10px var(--color-text);
+}
+
+.contacto__formulario button {
+    align-self: center;
+    background: var(--color-primary);
+    border: none;
+    color: var(--color-blanco);
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 12px 48px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    box-shadow: 0 6px 15px rgba(60, 221, 194, 0.6);
+    font-family: var(--font-family);
+}
+
+.contacto__formulario button:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 8px 20px rgba(60, 221, 194, 0.85);
+}
+.contacto__formulario textarea {
+  resize: none;
+}
+
 /* MÓVILES HASTA 767px */
 @media only screen and (max-width: 767px) {
 
@@ -734,9 +825,7 @@ flex-direction: column;
 .main__2 {
    
     height: auto
-   
-
-
+  
 }
 
  .main__3 {
@@ -877,6 +966,17 @@ flex-direction: column;
     height: auto;
     margin: 0 auto;
   }
+
+ .contacto__formulario {
+    padding: 1.5rem;
+  }
+  .contacto h1 {
+    font-size: 2rem;
+  }
+  .contacto__formulario textarea {
+  resize: none;
+}
+
 }
 
 /* TABLETS: 768px a 1023px */
