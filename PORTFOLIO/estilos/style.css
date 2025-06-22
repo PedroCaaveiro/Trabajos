@@ -23,6 +23,7 @@ body {
     overflow-x: hidden;
     /* Evita scroll horizontal */
     position: relative;
+    
 }
 
 .background-wave {
@@ -73,7 +74,7 @@ body {
     color: var(--color-blanco);
     text-align: center;
     margin-bottom: 10px;
-    /* Asegura separación del nav */
+    
 }
 
 nav {
@@ -146,7 +147,7 @@ h3.visible {
 }
 
 .main__1 h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .main__1 h3 {
@@ -384,15 +385,22 @@ a img:hover {
     }
 
     .main__3__bloque {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
 
     }
 
     .main__3__bloque img {
 
-        width: 50%;
+        width: 25%;
     }
+
+    .main__3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 
 
@@ -606,7 +614,7 @@ flex-direction: column;
 .seccion {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
+    height:auto;
     background-color: #1a1a1a;
     color: #fff;
     overflow: hidden;
@@ -679,3 +687,317 @@ flex-direction: column;
     color:rgb(3, 3, 3);
   }
  
+  /* Box sizing para evitar errores de padding */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* MÓVILES HASTA 767px */
+@media only screen and (max-width: 767px) {
+
+  .header h1 {
+    font-size: 1.5rem;
+    color: var(--color-blanco);
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.main__1 h2 {
+    font-size: 1rem;
+}
+
+.main__1 h3 {
+    font-size: 1rem;
+}
+
+.main__2 h2{
+
+   font-size: 1rem;
+}
+.main__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ajusta la imagen para que se vea completamente */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+}
+
+
+.main__2 {
+   
+    height: auto
+   
+
+
+}
+
+ .main__3 {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .main__3__bloque {
+    width: 100px;
+    height: 100px;
+  }
+
+  .main__3__bloque img {
+    width: 60%;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 300px;
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 2rem;
+    text-align: center;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* PAGINA SOBRE MI */
+  .grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+
+  .texto_experiencia {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    margin-top: 0;
+    padding: 10px 10px 0 10px;
+    height: auto;
+  }
+
+  .indice {
+    display: none;
+  }
+
+  .nav-link {
+    width: auto !important;
+    font-size: 14px;
+    justify-content: flex-start !important;
+    gap: 5px;
+  }
+
+  .experiencia {
+    height: auto !important;
+    flex-direction: column !important;
+    margin-bottom: 15px;
+  }
+
+  .year {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+
+  .contenido {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px;
+  }
+
+  .contenido h1 {
+    font-size: 1.5rem;
+  }
+
+  .habilidades ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .habilidades ul li {
+    width: auto;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+  }
+
+  .texto_experiencia p,
+  .texto p {
+    font-size: 0.9rem;
+  }
+
+  /* PAGINA PROYECTOS */
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .imagen,
+  .texto {
+    padding: 1rem;
+  }
+
+  .texto p {
+    width: 300px;
+     font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .video {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/* TABLETS: 768px a 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+
+  .texto_experiencia {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    margin-top: 0;
+    padding: 10px 10px 0 10px;
+    height: auto;
+  }
+
+  .indice {
+    display: none;
+  }
+
+  .nav-link {
+    width: auto !important;
+    font-size: 14px;
+    justify-content: flex-start !important;
+    gap: 5px;
+  }
+
+  .experiencia {
+    height: auto !important;
+    flex-direction: column !important;
+    margin-bottom: 15px;
+  }
+
+  .year {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+
+  .contenido {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px;
+  }
+
+  .contenido h1 {
+    font-size: 1.5rem;
+  }
+
+  .habilidades ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .habilidades ul li {
+    width: auto;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+  }
+
+  .texto_experiencia p,
+  .texto p {
+    font-size: 0.9rem;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .imagen,
+  .texto {
+    padding: 1rem;
+  }
+
+  .texto p {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .video {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    margin: 0 auto;
+ }
+
+
+
+}
