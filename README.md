@@ -25,7 +25,7 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 - **Descripción**: Tienda online dedicada a productos de la marca Ducati, con diseño moderno y funcionalidad básica.
 
 ### 5. Portfolio
-- **Tecnologías usadas**: (en construcción).
+- **Tecnologías usadas**: HTML, CSS, JavaScript
 - **Estado**: En construcción.
 - **Descripción**: Mi portafolio personal donde reuniré todos mis proyectos y experiencia profesional.
 
@@ -50,6 +50,7 @@ Aquí tienes algunos de mis proyectos desplegados en Netlify:
 - **The Luxe Collection**: [Visitar proyecto](http://proyectospedro.42web.io/The_Luxe_Collection/index.php)
 - **Live Festival**: [Visitar proyecto](https://dazzling-biscochitos-43b6ba.netlify.app)
 - **Barber App**: [Visitar proyecto](http://proyectospedro.42web.io/AppSalon_php/public/)
+- **PortFolio**: [Visitar proyecto](https://pedrocaaveiro.netlify.app/)
 
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
