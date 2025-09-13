@@ -39,7 +39,7 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 - **Estado**: Proyecto terminado
 - **Descripción**: Aplicación web desarrollada bajo el patrón de arquitectura MVC para la gestión integral de una barbería. Cuenta con un diseño responsivo y funcionalidades completas, incluyendo registro de usuarios con confirmación por correo electrónico, recuperación de contraseña vía email y un panel de administración para la creación, edición y eliminación de servicios.
 
-- ### 8. Workspace App
+- ### 8. Workscape App
 - **Tecnologías usadas**: (html, SCSS , GULP ,JAVASCRIPT ,PHP).
 - **Estado**: Proyecto terminado
 - **Descripción**: Workscape es una aplicación web desarrollada en PHP que permite a los usuarios crear, organizar y administrar proyectos y tareas de forma eficiente. Es una herramienta orientada a la productividad personal y la gestión colaborativa de proyectos. Cuenta con un diseño responsivo
