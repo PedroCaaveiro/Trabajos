@@ -19,3 +19,6 @@
 [submodule "PORTFOLIO"]
 	path = PORTFOLIO
 	url = https://github.com/PedroCaaveiro/Portfolio.git
+[submodule "Workscape"]
+	path = Workscape
+	url = https://github.com/PedroCaaveiro/Workscape.git
