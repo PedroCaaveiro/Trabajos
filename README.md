@@ -34,10 +34,15 @@ Este repositorio contiene diferentes proyectos que he desarrollado utilizando di
 - **Estado**: Proyecto terminado
 - **Descripción**: Agencia inmobiliaria Con un diseño atractivo y con funcionalidades avanzadas
 
-- ### 7. Barber App
+- ### 7. Barber 
 - **Tecnologías usadas**: (html, SCSS , GULP ,JAVASCRIPT ,PHP).
 - **Estado**: Proyecto terminado
-- **Descripción**: Aplicación web desarrollada bajo el patrón de arquitectura MVC para la gestión integral de una barbería. Cuenta con un diseño responsivo y funcionalidades completas, incluyendo registro de usuarios con confirmación por correo electrónico, recuperación de contraseña vía email y un panel de administración para la creación, edición y eliminación de servicios. 
+- **Descripción**: Aplicación web desarrollada bajo el patrón de arquitectura MVC para la gestión integral de una barbería. Cuenta con un diseño responsivo y funcionalidades completas, incluyendo registro de usuarios con confirmación por correo electrónico, recuperación de contraseña vía email y un panel de administración para la creación, edición y eliminación de servicios.
+
+- ### 8. Workscape 
+- **Tecnologías usadas**: (html, SCSS , GULP ,JAVASCRIPT ,PHP).
+- **Estado**: Proyecto terminado
+- **Descripción**: Workscape es una aplicación web desarrollada en PHP que permite a los usuarios crear, organizar y administrar proyectos y tareas de forma eficiente. Es una herramienta orientada a la productividad personal y la gestión colaborativa de proyectos. Cuenta con un diseño responsivo
 
 ---
 ### Proyectos Desplegados
@@ -49,8 +54,9 @@ Aquí tienes algunos de mis proyectos desplegados en Netlify:
 - **Store Ducati**: [Visitar proyecto](https://67d1ca828dc32a0008324055--storeducati.netlify.app/)
 - **The Luxe Collection**: [Visitar proyecto](http://proyectospedro.42web.io/The_Luxe_Collection/index.php)
 - **Live Festival**: [Visitar proyecto](https://dazzling-biscochitos-43b6ba.netlify.app)
-- **Barber App**: [Visitar proyecto](http://proyectospedro.42web.io/AppSalon_php/public/)
+- **Barber**: [Visitar proyecto](https://proyectospedro.42web.io/AppSalon_php/public/)
 - **PortFolio**: [Visitar proyecto](https://pedrocaaveiro.netlify.app/)
+- **Workscape**: [Visitar proyecto](https://proyectospedro.42web.io/Workscape/public/)
 
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
