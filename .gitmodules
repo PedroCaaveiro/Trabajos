@@ -22,3 +22,6 @@
 [submodule "Workscape"]
 	path = Workscape
 	url = https://github.com/PedroCaaveiro/Workscape.git
+[submodule "MeetPilot"]
+	path = MeetPilot
+	url = https://github.com/PedroCaaveiro/MeetPilot.git
