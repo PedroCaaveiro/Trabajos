@@ -56,7 +56,7 @@ Aquí tienes algunos de mis proyectos desplegados en Netlify:
 - **Live Festival**: [Visitar proyecto](https://dazzling-biscochitos-43b6ba.netlify.app)
 - **Barber App**: [Visitar proyecto](https://proyectospedro.42web.io/AppSalon_php/public/)
 - **PortFolio**: [Visitar proyecto](https://pedrocaaveiro.netlify.app/)
-- **Workspace App**: [Visitar proyecto](https://proyectospedro.42web.io/Workscape/public/)
+- **Workscape App**: [Visitar proyecto](https://proyectospedro.42web.io/Workscape/public/)
 
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
