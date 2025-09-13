@@ -54,9 +54,9 @@ Aquí tienes algunos de mis proyectos desplegados en Netlify:
 - **Store Ducati**: [Visitar proyecto](https://67d1ca828dc32a0008324055--storeducati.netlify.app/)
 - **The Luxe Collection**: [Visitar proyecto](http://proyectospedro.42web.io/The_Luxe_Collection/index.php)
 - **Live Festival**: [Visitar proyecto](https://dazzling-biscochitos-43b6ba.netlify.app)
-- **Barber App**: [Visitar proyecto](https://proyectospedro.42web.io/AppSalon_php/public/)
+- **Barber**: [Visitar proyecto](https://proyectospedro.42web.io/AppSalon_php/public/)
 - **PortFolio**: [Visitar proyecto](https://pedrocaaveiro.netlify.app/)
-- **Workscape App**: [Visitar proyecto](https://proyectospedro.42web.io/Workscape/public/)
+- **Workscape**: [Visitar proyecto](https://proyectospedro.42web.io/Workscape/public/)
 
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
