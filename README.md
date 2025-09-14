@@ -63,7 +63,7 @@ Aquí tienes algunos de mis proyectos desplegados en Netlify:
 - **Barber**: [Visitar proyecto](https://proyectospedro.42web.io/AppSalon_php/public/)
 - **PortFolio**: [Visitar proyecto](https://pedrocaaveiro.netlify.app/)
 - **Workscape**: [Visitar proyecto](https://proyectospedro.42web.io/Workscape/public/)
-- **MettPilot**: [Visitar proyecto](https://proyectospedro.42web.io/Workscape/public/)
+- **MettPilot**: [Visitar proyecto](https://proyectospedro.42web.io/MeetPilot/public/)
 
 
 Visita mi [GitHub](https://github.com/PedroCaaveiro/Trabajos) para explorar estos proyectos en detalle.
